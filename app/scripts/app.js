@@ -9,4 +9,4 @@
  * Main module of the application.
  */
 angular
-  .module('mapsApp', []);
+  .module('mapsApp', ['leaflet-directive']);

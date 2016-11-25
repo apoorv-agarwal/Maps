@@ -50,8 +50,14 @@
 
     <div class="container">
     <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-    
+    <div ng-include="'views/map1.html'" ng-controller="Map1Ctrl"></div>
     </div>
+
+
+
+
+
+
 
     <div class="footer">
       <div class="container">
@@ -76,17 +82,27 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/leaflet/dist/leaflet.js"></script>
-    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+
+    
     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+
+
+    
+
+
+
+
+
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="bower_components/leaflet/dist/leaflet.js"></script>
+        <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/map1.js"></script>
+        <script src="scripts/controllers/basictileszoomchangercontroller.js"></script>
         <!-- endbuild -->
 </body>
 </html>
